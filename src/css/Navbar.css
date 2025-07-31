@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbeffd; 
+  }
+  
+  .logo {
+    color: #fff; 
+    left: 0;
+  }
+  
+  .menu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+  }
+ 

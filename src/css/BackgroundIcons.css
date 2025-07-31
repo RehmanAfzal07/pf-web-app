@@ -1,0 +1,37 @@
+.background-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60dvw;
+    height: 70dvh;
+    overflow: hidden;
+    z-index: 99
+  }
+  
+  .icon {
+    position: absolute;
+    font-size: 2.5rem; 
+    color: rgba(0, 0, 0, 0.522); 
+    opacity: 0.291; 
+    animation: moveAround 10s infinite linear;
+    
+  }
+  
+ 
+  @keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-0px, 10px); }
+    75% { transform: translate(10px, 20px); }
+    100% { transform: translate(-20px, -10px); }
+  }
+  
+  
+  .css { top: -3%; left: 5%; color: blue; opacity: 0.3; }
+  .javascript { top: 15%; left: 35%;color:#fff017; opacity: 0.4; }
+  .react { top: 5%; left: 55%; color:#61defb; opacity: 0.5; }
+  .typescript { top: 50%; left: 10%; color: rgba(140, 0, 255,0.4); }
+  .github { top: 65%; left: 65%; color: rgba(32, 18, 228, 0.4); }
+  .redux{top: 45%; left:40%; color: rgb(132, 12, 231); opacity:0.4;}
+  .router{top: 35%; left:70%; color: rgb(255, 0, 0); opacity: 0.5;}
+  .bootstrap{top: 30%; left:50%; color: rgb(36, 50, 240); opacity: 0.5;}

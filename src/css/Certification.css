@@ -1,0 +1,48 @@
+.carousel-container {
+  position: relative;
+  margin-left: 5dvw   ;
+  max-width: 90%; 
+  margin-top: 20dvh;
+  
+ 
+}
+.carousel-container .slick-slide:hover{
+  transform: scale(1.09);
+}
+
+.carousel-container .slick-slide {
+  height: 450px; 
+}
+
+.carousel-container img {
+  width: calc(100% - 20px);
+  height: auto; 
+  object-fit: cover; 
+  margin: 0 10px; 
+}
+
+.heading1{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  position: relative;
+  font-size: 48px;
+  color: #10111833;
+  -webkit-text-stroke: 0.9vw #383d5200;
+  text-transform: uppercase;
+  text-shadow: 2px 2px  5px 3px rgba(128, 128, 128, 0.192);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2dvh;
+}
+.h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  color: rgba(0, 174, 255, 0.849);
+  -webkit-text-stroke: 0vw #363d52;
+  border-right: 0vw solidrgba(0, 174, 255, 0.87);
+  overflow: hidden;
+}
