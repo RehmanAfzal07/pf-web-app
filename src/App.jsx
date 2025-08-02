@@ -175,7 +175,7 @@ const App = () => {
         </Header>
 
         {/* Sections */}
-        <Home id="home" />
+        <Home id="Home" />
         <Education id="education" />
         <Projects id="projects" />
         <Skills id="skills" />

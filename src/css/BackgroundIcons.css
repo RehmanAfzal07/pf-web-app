@@ -28,10 +28,11 @@
   
   
   .css { top: -3%; left: 5%; color: blue; opacity: 0.3; }
-  .javascript { top: 15%; left: 35%;color:#fff017; opacity: 0.4; }
+  .javascript { top: 25%; left: 65%;color:#fff017; opacity: 0.4; }
   .react { top: 5%; left: 55%; color:#61defb; opacity: 0.5; }
-  .typescript { top: 50%; left: 10%; color: rgba(140, 0, 255,0.4); }
+  .typescript { top: 70%; left: 0%; color: rgba(140, 0, 255,0.4); }
   .github { top: 65%; left: 65%; color: rgba(32, 18, 228, 0.4); }
   .redux{top: 45%; left:40%; color: rgb(132, 12, 231); opacity:0.4;}
   .router{top: 35%; left:70%; color: rgb(255, 0, 0); opacity: 0.5;}
-  .bootstrap{top: 30%; left:50%; color: rgb(36, 50, 240); opacity: 0.5;}
+  .bootstrap{top: 40%; left:50%; color: rgb(36, 50, 240); opacity: 0.5;}
+  .nextjscript{top: 40%; left:55%; color: rgb(59, 5, 5); opacity: 0.9;}

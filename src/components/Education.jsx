@@ -42,7 +42,7 @@ const Education = () => {
   }, []);
 
   return (
-    <section className="education-section">
+    <section className="education-section" id="education">
       <h2 className="section-title" data-aos="fade-down">Education</h2>
       <div className="table-container" data-aos="fade-up">
         <table className="education-table">

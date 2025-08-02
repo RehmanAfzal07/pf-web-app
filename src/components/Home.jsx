@@ -41,7 +41,7 @@ const Home = ({ id }) => {
     };
 
     return (
-        <div className='container-home' data-aos="fade-down">
+        <div className='container-home' data-aos="fade-down" id="home">
             <div className='grid-container'>
                 <div className='image-container'>
                     <div className='social-media'>

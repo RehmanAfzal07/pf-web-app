@@ -1,8 +1,8 @@
 // src/BackgroundIcons.jsx
-import React from 'react';
 import { FaReact, FaGithub, FaCss3Alt, FaJsSquare } from 'react-icons/fa'; // Importing icons from react-icons
 import { SiBootstrap,  SiReactrouter, SiRedux, SiTypescript } from 'react-icons/si';
 import '../css/BackgroundIcons.css'
+import { TbBrandNextjs } from 'react-icons/tb';
 
 const BackgroundIcons = () => {
   return (
@@ -15,6 +15,7 @@ const BackgroundIcons = () => {
       <SiRedux className='icon redux'/>
       <SiReactrouter className='icon router'/>
       <SiTypescript className='icon typescript'/>
+      <TbBrandNextjs className='icon nextjscript' />
     </div>
   );
 };

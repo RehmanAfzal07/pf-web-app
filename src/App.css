@@ -1,4 +1,9 @@
 /* === General Reset === */
+
+html, body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,8 +76,8 @@
 /* === Navigation === */
 .nav-items {
   display: flex;
-  list-style: none;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-items li a {
