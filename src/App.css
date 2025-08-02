@@ -1,4 +1,156 @@
+/* === General Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Loader === */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.skeleton-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.loading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === Progress Bar === */
 .progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #ccc;
+  z-index: 1000;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.menu-button {
+  display: none;
+}
+
+/* === Navigation === */
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-items li a {
+  font-size: 18px;
+  color: #333;
+}
+
+/* === Drawer Nav Items === */
+.drawer-nav-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.drawer-nav-items li {
+  margin: 12px 0;
+}
+
+.drawer-nav-items li a {
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* === Back to Top === */
+.ant-back-top-inner {
+  width: 40px;
+  height: 40px;
+  background-color: #0084fffa;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ant-back-top-inner:hover {
+  background-color: #414b553d;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-block;
+    font-size: 24px;
+    background: none;
+    border: none;
+  }
+
+  .nav-items {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .progress-bar {
   position: sticky;
   top: 0;
   left: 0;
@@ -26,7 +178,6 @@
   top: 0;
   left: 0;
   background-color: #f0f2f5;
-  /* Adjust this color as needed */
   z-index: 9999;
 }
 
@@ -35,13 +186,17 @@
   max-width: 1200px;
   margin-top: 20px;
 }
-
+.loading{
+  text-align: center;
+  font-size: 24px;
+  text-shadow: #ccc;
+}
 
 .header {
   top: 0%;
   margin-bottom: 2%;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 5px;
   position: fixed;
   z-index: 999;
@@ -70,7 +225,6 @@
 .nav ul li {
   display: inline-block;
   margin-right: 20px;
-  /* Adjust spacing between menu items */
 }
 
 .nav ul li a {
@@ -83,7 +237,6 @@
   color: #007bff;
 }
 
-/* Progress bar */
 .progress-bar {
   position: fixed;
   top: 0;
@@ -125,7 +278,7 @@
 
 .ant-back-top-inner:hover {
   background-color: #414b553d;
-}
+} */
 
 
 

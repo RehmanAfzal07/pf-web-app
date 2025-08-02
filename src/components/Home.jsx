@@ -13,10 +13,10 @@ const Home = ({ id }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setShowFirstSet(prev => !prev); 
+            setShowFirstSet(prev => !prev);
         }, 4200);
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, []);
 
     const handleDownloadClick = () => {
@@ -36,7 +36,7 @@ const Home = ({ id }) => {
 
     const startDownload = () => {
         setTimeout(() => {
-            window.location.href ='Rehman-Afzal-CV.pdf';
+            window.location.href = 'Rehman-Afzal-CV.pdf';
         }, 1000);
     };
 
@@ -77,47 +77,50 @@ const Home = ({ id }) => {
                     </div>
                 </div>
                 <div className='heading' data-aos="fade-left">
-                <BackgroundIcons /> 
+                    <BackgroundIcons />
                     <div className="heading-container">
-                        {showFirstSet ? (
-                            <h1 className="h1" data-text="React/Native Dev">React/Native Dev</h1>
-                        ) : (   
-                                <h1 className="h1" data-text="NextJS/Full-stack">NextJS/Full-stack</h1>
+                       {showFirstSet ? (
+  <h1 className="h1" data-text="React/Native Dev">React/Native Dev</h1>
+) : (
+  <h1 className="h1" data-text="NextJS/Full-stack">NextJS/Full-stack</h1>
+)}
 
-                        )}
                     </div>
-                    <h1 style={{ fontFamily: "Arial" }} data-aos="fade-left">Rehman Afzal</h1>
-                    <p style={{ fontFamily: "verdana" }} data-aos="fade-left">
-                        <b>Welcome</b> to my portfolio! I'm a passionate React,React Native, Next-JS & Full-stack professional having <b>+3 Years</b> with a knack for crafting dynamic 
+                    <div>
+                               <h2  data-aos="fade-left">Rehman Afzal</h2>
+                    <p  data-aos="fade-left">
+                        <b>Welcome</b> to my portfolio! I'm a passionate React,React Native, Next-JS & Full-stack professional having <b>+3 Years</b> with a knack for crafting dynamic
                         and efficient web & mobile, full stack applications. With a keen eye for detail and a dedication to clean code, I specialize in building intuitive user interfaces and seamless experiences. Explore my projects and let's collaborate to bring your ideas to life
                     </p>
+                    </div>
+             
                 </div>
             </div>
-            <div style={{ display: "flex", marginLeft:"40%", gap: "10%", padding: ".1%" }}>
-                        <div>
-                            <a href='#hireme'>
-                                <Button shape='square' size="large" type='primary'>
-                                    Hire Me
-                                </Button>
-                            </a>
-                        </div>
-                        <div>
-                            <Button 
-                                type="danger"
-                                size="large"
-                                icon={<DownloadOutlined />}
-                                onClick={handleDownloadClick}
-                            >
-                                Resume
-                            </Button>
-                            <Modal
-                                visible={modalVisible}
-                                onCancel={() => setModalVisible(false)}
-                                footer={null}
-                            >
-                                <p>Downloading will start in {countdown} seconds</p>
-                            </Modal>
-                        </div>
+            <div style={{ display: "flex", marginLeft: "40%", gap: "5%", padding: "1%" }}>
+                <div>
+                    <a href='#hireme'>
+                        <Button shape='square' size="large" type='primary'>
+                            Hire Me
+                        </Button>
+                    </a>
+                </div>
+                <div>
+                    <Button
+                        type="danger"
+                        size="large"
+                        icon={<DownloadOutlined />}
+                        onClick={handleDownloadClick}
+                    >
+                        Resume
+                    </Button>
+                    <Modal
+                        visible={modalVisible}
+                        onCancel={() => setModalVisible(false)}
+                        footer={null}
+                    >
+                        <p>Downloading will start in {countdown} seconds</p>
+                    </Modal>
+                </div>
             </div>
         </div>
     );

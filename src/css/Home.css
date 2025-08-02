@@ -1,5 +1,5 @@
 .container-home {
-  margin: 10% 0% 5% 7%;
+  margin: auto;
   width: 80%;
 }
 
@@ -22,11 +22,11 @@
 }
 
 .nav ul li {
-  margin-right: 20px;
+  margin-left: 10%;
 }
 
 .nav ul li:last-child {
-  margin-right: 0;
+  margin-left: 10%;
 }
 
 .nav ul li a {
@@ -44,15 +44,14 @@
   display: grid;
   grid-template-columns: 1.3fr 2fr ;
   gap: 0%;
-  padding: 2%;
+  padding: 0%;
 }
 
 img {
-  margin: 5%;
-  width: 75%;
-  height: auto;
-  margin-top:20px;
-  margin-bottom:50px;
+  margin-top: 8%;
+  width: 90%;
+  height: 100%;
+  margin-bottom:30px;
   transition: transform 0.5s ease; /* Add transition for transform */
 }
 
@@ -79,9 +78,11 @@ img {
 
 .social-media {
   position: relative;
+  top:5;
   bottom: 0;
   right: 0;
   display: flex;
+   margin-top: 10%;
 }
 
 .custom-whatsApp {
@@ -105,7 +106,9 @@ img {
 }
 
 .social-media Button {
-  margin-left: 5px;
+  display: flex;
+  padding: 5px;
+ 
 }
 
 .heading {
@@ -113,33 +116,64 @@ img {
   flex-direction: column;
   padding: 5px;
   margin-bottom: 10px;
-  margin-top: -70px;
+  margin-top: 50px;
 }
 .h1 {
   font-family: 'Nunito', sans-serif;
-  top: -20px;
   font-weight: 900;
-  position: relative;
-  font-size: 58px;
-  color: #1011181a;
-  -webkit-text-stroke: 0.9vw #383d5200;
+  font-size: 32px;
   text-transform: uppercase;
-  text-shadow: 0px 0px  5px rgba(128, 128, 128, 0.192);
-}
-.h1::before {
-  content: attr(data-text);
+  color: transparent;
+  -webkit-text-stroke: 0.5px #888;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 0;
-  color: rgba(0, 174, 255, 0.849);
-  -webkit-text-stroke: 0vw #363d52;
-  border-right: 0vw solidrgba(0, 174, 255, 0.87);
+  margin-top: 50px;
   overflow: hidden;
-  animation: animate 6s linear infinite;
-  -webkit-animation: animate 6s linear infinite;
+  white-space: nowrap;
 }
 
+/* Animated typing overlay */
+.h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 10;
+  left: 0;
+  color: rgba(0, 174, 255, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(0, 174, 255, 0.9);
+  width: 0;
+  animation: typing 3s steps(30, end) infinite, blink 0.7s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 174, 255, 0.9);
+  }
+}
+
+.h2{
+  margin-top: 50x;
+}
 
 @keyframes animate {
   0% {
